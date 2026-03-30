@@ -142,8 +142,7 @@ def call_openai_with_chat_prompt_lcel(chat_prompt: ChatPromptValue) -> None:
 def main() -> None:
     # Auto-load variables from .env in project root.
     load_dotenv()
-
-    # demo_prompt_template()
+    
     chat_prompt = demo_chat_prompt_template()
     should_call_llm = input("\n是否调用 OpenAI 模型？(y/n): ").strip().lower()
     if should_call_llm in {"y", "yes"}:
